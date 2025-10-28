@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7e6e9; /* গোলাপী ব্যাকগ্রাউন্ড */
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* বাটন পজিশনিং এর জন্য */
+}
+
+.question {
+    color: #333;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-group {
+    position: relative; /* বাটন পজিশন করার জন্য */
+    height: 60px; /* বাটন এরিয়ার জন্য যথেষ্ট স্থান */
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#yesBtn {
+    background-color: #ff69b4; /* হট পিঙ্ক */
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #e65a9e;
+}
+
+#noBtn {
+    background-color: #ccc;
+    color: #333;
+    position: absolute; /* জাভাস্ক্রিপ্ট দ্বারা সরানো হবে */
+    transition: none; /* যাতে মুভ করার সময় ট্রানজিশন না হয় */
+}
+
+.hidden {
+    display: none;
+}
+
+.result-text {
+    color: #ff69b4;
+    font-size: 3em;
+}
